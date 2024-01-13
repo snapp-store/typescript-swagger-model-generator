@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    {
+      "inputURL": "http://192.168.1.1:5000/swagger/docs/v1/MAIN_API"
+    },
+    {
+      "inputURL": "http://192.168.1.1:5000/swagger/docs/v1/MAIN_API2"
+    },
+    {
+      "inputURL": "http://192.168.1.1:5000/swagger/docs/v1/MAIN_API3"
+    }
+  ],
+  "output": "./swagger.output.json"
+}
