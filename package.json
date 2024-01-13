@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "merge:swagger": "npx openapi-merge-cli --config ./src/swagger/swagger.config.json",
+    "generate:sdk": "npx swagger-typescript-api -p ./src/swagger/swagger.output.json -o ./src/models -n club.ts --axios",
+    "update:club-core-dev": "npm run merge:swagger & npm run generate:sdk"
+
   },
   "dependencies": {
     "@tanstack/react-query": "^5.17.10",
